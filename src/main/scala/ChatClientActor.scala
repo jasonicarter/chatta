@@ -4,7 +4,7 @@
 
 import akka.actor._
 
-class ClientActor(val username: String, server: ActorRef) extends Actor {
+class ChatClientActor(val username: String, server: ActorRef) extends Actor {
 
   server ! Connect(username) // send connect msg to serverActor
 

@@ -4,7 +4,7 @@
 
 import akka.actor._
 
-class ServerActor extends Actor {
+class ChatServerActor extends Actor {
 
   var clients = List[(String, ActorRef)]()
 
